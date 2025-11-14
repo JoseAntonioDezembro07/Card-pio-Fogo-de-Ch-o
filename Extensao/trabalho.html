@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fogo de Chão - Churrascaria e Restaurante</title>
+    
+    <link rel="stylesheet" href="estilo.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="menu-topo">
+        <div class="logo">FOGO DE CHÃO</div>
+        
+        <ul class="links-menu">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#marmitas">Marmitas</a></li>
+            <li><a href="#churrasco">Rodízio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        
+        <div class="botao-menu-celular">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="home" class="fundo-principal">
+        <div class="sombra-fundo">
+            <h1>O Sabor da Tradição</h1>
+            <p>Churrasco, Buffet Livre e a melhor Marmita de Toledo.</p>
+            <a href="#marmitas" class="botao-vermelho">Ver Opções de Almoço</a>
+        </div>
+    </header>
+
+    <section id="marmitas" class="secao-branca">
+        <div class="conteudo organizador-flex">
+            <div class="metade-texto">
+                <h2>Marmitas & Delivery</h2>
+                <p>Peça sua refeição fresquinha sem sair de casa. Arroz, feijão, carnes selecionadas e salada do dia.</p>
+                
+                <div class="caixa-precos">
+                    <div class="quadrado-preco" onclick="selecionarOpcao('Pequena', '15,00', this)">
+                        <span>Pequena</span>
+                        <strong>R$ 15,00</strong>
+                    </div>
+                    <div class="quadrado-preco" onclick="selecionarOpcao('Média', '25,00', this)">
+                        <span>Média</span>
+                        <strong>R$ 25,00</strong>
+                    </div>
+                    <div class="quadrado-preco" onclick="selecionarOpcao('Grande', '35,00', this)">
+                        <span>Grande</span>
+                        <strong>R$ 35,00</strong>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/5545999118050" target="_blank" class="botao-whatsapp" id="link-whatsapp">
+                    <img src="img/logo.webp" alt="Logo WhatsApp" class="icone-whatsapp">
+                    <span id="texto-link-whatsapp">Pedir no WhatsApp</span>
+                </a>
+            </div>
+            <div class="metade-imagem">
+                <img src="img/img15.jpeg" alt="Prato feito Fogo de Chão">
+            </div>
+        </div>
+    </section>
+
+    <section id="churrasco" class="secao-escura">
+        <div class="conteudo">
+            <h2>Rodízio & Espeto Corrido</h2>
+            <p class="subtitulo">A verdadeira experiência gaúcha.</p>
+
+            <div class="grade-precos">
+                <div class="cartao-rodizio">
+                    <h3>Segunda a Sábado</h3>
+                    <div class="preco-grande">R$ 49,99</div>
+                    <p>Buffet livre incluso</p>
+                </div>
+                <div class="cartao-rodizio cartao-destaque">
+                    <h3>Domingos e Feriados</h3>
+                    <div class="preco-grande">R$ 59,99</div>
+                    <p>Cortes Especiais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-galeria">
+        <div class="conteudo">
+            <h2>Nosso Ambiente</h2>
+            <div class="grade-fotos">
+                <img src="img/img10.jpeg" alt="Buffet de Saladas">
+                <img src="img/img7.jpeg" alt="Salão do Restaurante">
+                <img src="img/img13.jpeg" alt="Espeto de Carne Assada">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="rodape">
+        <div class="conteudo rodape-caixa">
+            <div class="info-rodape">
+                <p>📍 Rua Exemplo, 123 - Toledo, PR</p>
+                <p>📞 (45) 99911-8050</p>
+            </div>
+            <div class="redes-sociais">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="direitos-autorais">
+            <p>&copy; 2025 Churrascaria Fogo de Chão. Desenvolvido por Developers (ADS).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
