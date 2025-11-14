@@ -11,7 +11,7 @@ function selecionarOpcao(tamanho, preco, elementoClicado) {
     elementoClicado.classList.add('selecionado');
 
  
-    let telefone = "5545999118050";
+    let telefone = "554599118050";
     let mensagem = `Olá! Gostaria de pedir uma Marmita ${tamanho} de R$ ${preco}.`;
     let linkZap = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
 
