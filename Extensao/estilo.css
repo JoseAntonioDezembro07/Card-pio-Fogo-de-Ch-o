@@ -10,7 +10,7 @@
     --fonte-textos: 'Lato', sans-serif;
 }
 
-/* === RESET BÁSICO === */
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -21,7 +21,7 @@ body {
 
 html { scroll-behavior: smooth; }
 
-/* === MENU DE CIMA === */
+
 .menu-topo {
     background: rgba(0,0,0,0.9);
     color: var(--cor-branca);
@@ -29,7 +29,7 @@ html { scroll-behavior: smooth; }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Fica preso no topo */
+    position: fixed; 
     width: 100%;
     z-index: 1000;
 }
@@ -47,10 +47,10 @@ html { scroll-behavior: smooth; }
 
 .botao-menu-celular { display: none; font-size: 1.5rem; cursor: pointer; }
 
-/* === CAPA DO SITE === */
+
 .fundo-principal {
     height: 100vh;
-    /* Caminho para a foto da fachada */
+   
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/img4.jpeg');
     background-position: center;
     background-size: cover;
@@ -87,11 +87,11 @@ html { scroll-behavior: smooth; }
 }
 .botao-vermelho:hover { transform: scale(1.05); background-color: #8a0e0e; }
 
-/* === CONFIGURAÇÃO GERAL DAS SEÇÕES === */
+
 .conteudo { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
 h2 { font-family: var(--fonte-titulos); font-size: 2.5rem; text-align: center; margin-bottom: 40px; }
 
-/* === SEÇÃO MARMITAS === */
+
 .secao-branca { background-color: var(--cor-cinza-claro); }
 
 .organizador-flex { display: flex; align-items: center; gap: 50px; }
@@ -113,7 +113,7 @@ h2 { font-family: var(--fonte-titulos); font-size: 2.5rem; text-align: center; m
 .quadrado-preco:hover { background-color: #ffecec; }
 .quadrado-preco strong { display: block; color: var(--cor-vermelha); font-size: 1.2rem; margin-top: 5px; }
 
-/* Classe "selecionado" (adicionada pelo JS) */
+
 .selecionado {
     background-color: var(--cor-vermelha) !important;
     color: white !important;
@@ -123,7 +123,7 @@ h2 { font-family: var(--fonte-titulos); font-size: 2.5rem; text-align: center; m
 }
 .selecionado strong { color: white !important; }
 
-/* === BOTÃO WHATSAPP === */
+
 .botao-whatsapp {
     display: inline-flex;
     align-items: center;
@@ -142,7 +142,6 @@ h2 { font-family: var(--fonte-titulos); font-size: 2.5rem; text-align: center; m
 .botao-whatsapp:hover { background-color: #1ebc57; transform: scale(1.05); }
 .icone-whatsapp { width: 24px; height: auto; }
 
-/* === SEÇÃO CHURRASCO === */
 .secao-escura { background-color: var(--cor-preta); color: var(--cor-branca); }
 .secao-escura h2 { color: var(--cor-dourada); }
 .subtitulo { text-align: center; margin-top: -30px; margin-bottom: 40px; color: #ccc; }
@@ -158,7 +157,7 @@ h2 { font-family: var(--fonte-titulos); font-size: 2.5rem; text-align: center; m
 .cartao-rodizio .preco-grande { font-size: 2.5rem; font-weight: bold; color: var(--cor-vermelha); margin: 10px 0; }
 .cartao-destaque { border: 1px solid var(--cor-dourada); }
 
-/* === GALERIA === */
+
 .secao-galeria { background-color: var(--cor-cinza-claro); }
 .grade-fotos {
     display: grid;
@@ -168,7 +167,7 @@ h2 { font-family: var(--fonte-titulos); font-size: 2.5rem; text-align: center; m
 .grade-fotos img { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; transition: 0.3s; }
 .grade-fotos img:hover { transform: scale(1.03); opacity: 0.8; }
 
-/* === RODAPÉ === */
+
 .rodape { background: var(--cor-vermelha); color: white; padding: 40px 20px; }
 .rodape-caixa {
     display: flex;
@@ -180,14 +179,14 @@ h2 { font-family: var(--fonte-titulos); font-size: 2.5rem; text-align: center; m
 }
 .info-rodape p { margin: 5px 0; }
 .redes-sociais a { color: white; text-decoration: none; font-size: 1.5rem; margin: 0 10px; }
-.direitos-autorais { width: 100%; text-align: center; margin-top: 20px; font-size: 0.9rem; }
 
-/* === AJUSTE PARA CELULAR (Mobile) === */
+
+
 @media (max-width: 768px) {
     .menu-topo { padding: 15px 20px; }
     
     .links-menu {
-        display: none; /* Esconde o menu normal */
+        display: none; 
         flex-direction: column;
         background: rgba(0,0,0,0.95);
         position: absolute;
@@ -198,9 +197,9 @@ h2 { font-family: var(--fonte-titulos); font-size: 2.5rem; text-align: center; m
     }
     .links-menu li { padding: 15px 0; }
     
-    .botao-menu-celular { display: block; /* Mostra o ícone */ }
+    .botao-menu-celular { display: block;  }
     
-    /* Classe que o JS adiciona ao clicar no ícone */
+    
     .menu-aberto { display: flex; }
     
     .organizador-flex { flex-direction: column; }
